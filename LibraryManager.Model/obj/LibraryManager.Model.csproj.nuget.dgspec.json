@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EFCore\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {}
+    "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {}
   },
   "projects": {
-    "C:\\EFCore\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
+    "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EFCore\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
         "projectName": "LibraryManager.Model",
-        "projectPath": "C:\\EFCore\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
-        "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-        "outputPath": "C:\\EFCore\\LibraryManager\\LibraryManager.Model\\obj\\",
+        "projectPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
+        "packagesPath": "C:\\Users\\Estefani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Estefani\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
