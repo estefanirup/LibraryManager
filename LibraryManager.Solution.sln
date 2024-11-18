@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Model", "LibraryManager.Model\LibraryManager.Model.csproj", "{8182D2DF-F84C-4187-8556-13D797A341F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Persistence", "LibraryManager.Persistence\LibraryManager.Persistence.csproj", "{6A163560-6130-40C0-9D34-31ACBF248D0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.UI.Console", "LibraryManager.UI.Console\LibraryManager.UI.Console.csproj", "{EC9572F5-16DD-4508-9A8D-243D667AAA5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{8182D2DF-F84C-4187-8556-13D797A341F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8182D2DF-F84C-4187-8556-13D797A341F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8182D2DF-F84C-4187-8556-13D797A341F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A163560-6130-40C0-9D34-31ACBF248D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A163560-6130-40C0-9D34-31ACBF248D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A163560-6130-40C0-9D34-31ACBF248D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A163560-6130-40C0-9D34-31ACBF248D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
