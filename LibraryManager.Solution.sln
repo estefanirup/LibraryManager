@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Persistence"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.UI.Console", "LibraryManager.UI.Console\LibraryManager.UI.Console.csproj", "{EC9572F5-16DD-4508-9A8D-243D667AAA5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Interfaces", "LibraryManager.Interfaces\LibraryManager.Interfaces.csproj", "{85ED05C0-5747-4F8E-B415-9471451E938C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Interfaces", "LibraryManager.Interfaces\LibraryManager.Interfaces.csproj", "{85ED05C0-5747-4F8E-B415-9471451E938C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

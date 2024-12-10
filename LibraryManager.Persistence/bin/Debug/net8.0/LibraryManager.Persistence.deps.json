@@ -818,10 +818,7 @@
       "System.Threading.Channels/7.0.0": {},
       "LibraryManager.Model/1.0.0": {
         "runtime": {
-          "LibraryManager.Model.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LibraryManager.Model.dll": {}
         }
       }
     }

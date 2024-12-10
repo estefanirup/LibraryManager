@@ -9,7 +9,7 @@ namespace LibraryManager.Repositories
     {
         private LibraryManagerContext _dbContext = new LibraryManagerContext();
         private DbSet<T> _dbSet;
-
+        
         public Repository()
         {
             _dbSet = _dbContext.Set<T>();

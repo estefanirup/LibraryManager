@@ -9,6 +9,7 @@
       "LibraryManager.UI.Console/1.0.0": {
         "dependencies": {
           "LibraryManager.Model": "1.0.0",
+          "LibraryManager.Persistence": "1.0.0",
           "LibraryManager.Repositories": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0"
         },
@@ -811,18 +812,12 @@
       "System.Threading.Channels/7.0.0": {},
       "LibraryManager.Interfaces/1.0.0": {
         "runtime": {
-          "LibraryManager.Interfaces.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LibraryManager.Interfaces.dll": {}
         }
       },
       "LibraryManager.Model/1.0.0": {
         "runtime": {
-          "LibraryManager.Model.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LibraryManager.Model.dll": {}
         }
       },
       "LibraryManager.Persistence/1.0.0": {
@@ -832,10 +827,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0"
         },
         "runtime": {
-          "LibraryManager.Persistence.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LibraryManager.Persistence.dll": {}
         }
       },
       "LibraryManager.Repositories/1.0.0": {
@@ -845,10 +837,7 @@
           "LibraryManager.Persistence": "1.0.0"
         },
         "runtime": {
-          "LibraryManager.Repositories.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LibraryManager.Repositories.dll": {}
         }
       }
     }

@@ -26,6 +26,8 @@ internal class Program
                     BookUI bookUI = new BookUI();
                     bookUI.Menu();
                     break;
+                case "3":
+                    break;
             }
         }
     }

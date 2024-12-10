@@ -3,17 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using LibraryManager.Model;
+using LibraryManager.Model.Books;
 using LibraryManager.Model.Users;
+using LibraryManager.Persistence;
 using LibraryManager.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManager.UI.Console.UI
 {
     internal class UserUI
     {
+        private Repository<User> userRepository;
+        public UserUI() {
+            userRepository = new Repository<User>();
+        }
         public void Menu()
         {
-            while (true)
+            string? op="Oi";
+            while (op != "0")
             {
                 System.Console.Clear();
                 System.Console.WriteLine("[0] Voltar");
@@ -22,12 +31,8 @@ namespace LibraryManager.UI.Console.UI
                 System.Console.WriteLine("[3] Alterar Usuario");
                 System.Console.WriteLine("[4] Excluir Usuario");
                 System.Console.Write("Escolha uma opcao: ");
-                string op = System.Console.ReadLine();
+                op = System.Console.ReadLine();
                 System.Console.Clear();
-                
-                if (op == "0"){
-                    break;
-                }
 
                 switch (op)
                 {
@@ -49,8 +54,7 @@ namespace LibraryManager.UI.Console.UI
 
         public void cadastrar()
         {
-            Repository<User> userRepository = new Repository<User>();
-            System.Console.WriteLine("Cadastre");
+        System.Console.WriteLine("Cadastre");
             User user = new User(
             name: "João Silva",
             email: "joao.silva@email.com",
@@ -59,14 +63,19 @@ namespace LibraryManager.UI.Console.UI
             );
 
             userRepository.Create(user);
-
+            System.Console.WriteLine("se deus quis, adicionou");
+            System.Console.ReadKey();
         }
 
         public void exibir()
         {
-            Repository<User> userRepository = new Repository<User>();
             List<User> users = userRepository.GetAll();
-            System.Console.WriteLine(users[0].Name);
+            foreach (var item in users)
+            {
+                System.Console.WriteLine(item);
+            }
+            System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
+            System.Console.ReadKey();
 
         }
 

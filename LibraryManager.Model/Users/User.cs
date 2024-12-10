@@ -31,4 +31,9 @@ public class User
     {
         return UserId.HasValue ? UserId.GetHashCode() : 0;
     }
+    public override string ToString()
+    {
+        return $"Id: {UserId} Nome: {Name}, Email: {Email}, Data Registro: {RegisterDate:dd/MM/yyyy}";
+    }
+
 }

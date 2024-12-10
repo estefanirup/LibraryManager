@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -221,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -296,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -331,6 +331,9 @@
             "projectReferences": {
               "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
                 "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj"
+              },
+              "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj": {
+                "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj"
               },
               "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Repositories\\LibraryManager.Repositories.csproj": {
                 "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Repositories\\LibraryManager.Repositories.csproj"
@@ -376,7 +379,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

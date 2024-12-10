@@ -3,6 +3,7 @@ using System;
 using LibraryManager.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryManager.Persistence.Migrations
 {
     [DbContext(typeof(LibraryManagerContext))]
-    partial class LibraryManagerContextModelSnapshot : ModelSnapshot
+    [Migration("20241210182516_AdjustModels")]
+    partial class AdjustModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
@@ -48,7 +51,7 @@ namespace LibraryManager.Persistence.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("LibraryManager.Model.Books.Category", b =>
@@ -67,7 +70,7 @@ namespace LibraryManager.Persistence.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Category", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("LibraryManager.Model.Users.User", b =>
@@ -90,7 +93,7 @@ namespace LibraryManager.Persistence.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("User", (string)null);
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("LibraryManager.Model.Books.Book", b =>
