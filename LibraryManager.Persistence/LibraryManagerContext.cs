@@ -6,7 +6,6 @@ namespace LibraryManager.Persistence;
 
 public class LibraryManagerContext : DbContext 
 {
-    public LibraryManagerContext() {}
     public DbSet<Book> Books { get; set; }
     public DbSet<Category> Categories { get; set; }
 
@@ -18,6 +17,5 @@ public class LibraryManagerContext : DbContext
             );
         }*/
         optionsBuilder.UseSqlite("Data Source=POO_LibraryManager.db");
-
     }
 }

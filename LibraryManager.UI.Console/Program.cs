@@ -1,33 +1,32 @@
-﻿using LibraryManager.Model;
-using LibraryManager.Model.Books;
-using LibraryManager.Persistence;
+﻿using LibraryManager.UI.Console.UI;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        var category = new Category
+        while (true)
         {
-            CategoryId = 1,
-            Name = "Fantasy",
-            Description = "Genre of speculative fiction which involves themes of the supernatural, magic, and imaginary worlds and creatures."
-        };
-
-        var book = new Book
-        {
-            BookId = 2,
-            Title = "Fourth Wing",
-            Author = "Rebecca Yarros",
-            ISBN = "9781649373403",
-            PublicationYear = 2023,
-            Status = BookStatus.Available,
-            Category = category
-        };
-
-        var context = new LibraryManagerContext();
-        context.Add(book);
-        context.SaveChanges();
-
-        Console.WriteLine(book.BookId);
+            Console.Clear();
+            Console.WriteLine("[0] Sair");
+            Console.WriteLine("[1] Gerenciar Usuario");
+            Console.WriteLine("[2] Gerenciar Livro");
+            Console.Write("Escolha uma opcao: ");
+            string op = Console.ReadLine();
+            Console.Clear();
+            switch (op)
+            {
+                case "0":
+                    System.Environment.Exit(1);
+                    break;
+                case "1":
+                    UserUI userUI = new UserUI();
+                    userUI.Menu();
+                    break;
+                case "2":
+                    BookUI bookUI = new BookUI();
+                    bookUI.Menu();
+                    break;
+            }
+        }
     }
 }

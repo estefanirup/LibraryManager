@@ -3,19 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Model", "LibraryManager.Model\LibraryManager.Model.csproj", "{8182D2DF-F84C-4187-8556-13D797A341F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Model", "LibraryManager.Model\LibraryManager.Model.csproj", "{8182D2DF-F84C-4187-8556-13D797A341F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Persistence", "LibraryManager.Persistence\LibraryManager.Persistence.csproj", "{6A163560-6130-40C0-9D34-31ACBF248D0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.Persistence", "LibraryManager.Persistence\LibraryManager.Persistence.csproj", "{6A163560-6130-40C0-9D34-31ACBF248D0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.UI.Console", "LibraryManager.UI.Console\LibraryManager.UI.Console.csproj", "{EC9572F5-16DD-4508-9A8D-243D667AAA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManager.UI.Console", "LibraryManager.UI.Console\LibraryManager.UI.Console.csproj", "{EC9572F5-16DD-4508-9A8D-243D667AAA5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Repositories", "LibraryManager.Repositories\LibraryManager.Repositories.csproj", "{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager.Interfaces", "LibraryManager.Interfaces\LibraryManager.Interfaces.csproj", "{85ED05C0-5747-4F8E-B415-9471451E938C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8182D2DF-F84C-4187-8556-13D797A341F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +31,19 @@ Global
 		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC9572F5-16DD-4508-9A8D-243D667AAA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5616A0-4994-49A1-8EA3-139AF48FE5FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85ED05C0-5747-4F8E-B415-9471451E938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85ED05C0-5747-4F8E-B415-9471451E938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85ED05C0-5747-4F8E-B415-9471451E938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85ED05C0-5747-4F8E-B415-9471451E938C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C892DF5-9904-486B-B92C-683F2F89D468}
 	EndGlobalSection
 EndGlobal

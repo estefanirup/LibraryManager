@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryManager.Interfaces\LibraryManager.Interfaces.csproj" />
+    <ProjectReference Include="..\LibraryManager.Model\LibraryManager.Model.csproj" />
+    <ProjectReference Include="..\LibraryManager.Persistence\LibraryManager.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

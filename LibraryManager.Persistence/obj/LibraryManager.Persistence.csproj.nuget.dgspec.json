@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj": {}
+    "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
+    "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
+        "projectUniqueName": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
         "projectName": "LibraryManager.Model",
-        "projectPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
-        "packagesPath": "C:\\Users\\Estefani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\obj\\",
+        "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj",
+        "packagesPath": "C:\\Users\\enzod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Estefani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\enzod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -63,22 +69,28 @@
         }
       }
     },
-    "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj": {
+    "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj",
         "projectName": "LibraryManager.Persistence",
-        "projectPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Estefani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\LibraryManager.Persistence.csproj",
+        "packagesPath": "C:\\Users\\enzod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Estefani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\enzod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -86,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
-                "projectPath": "C:\\Users\\Estefani\\Desktop\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj"
+              "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj": {
+                "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\.POO\\LibraryManager\\LibraryManager.Model\\LibraryManager.Model.csproj"
               }
             }
           }

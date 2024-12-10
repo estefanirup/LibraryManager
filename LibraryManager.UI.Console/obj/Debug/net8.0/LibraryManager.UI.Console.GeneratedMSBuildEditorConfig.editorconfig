@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LibraryManager.UI.Console
-build_property.ProjectDir = C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.UI.Console\
+build_property.ProjectDir = C:\Users\enzod\OneDrive\Documentos\.POO\LibraryManager\LibraryManager.UI.Console\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
