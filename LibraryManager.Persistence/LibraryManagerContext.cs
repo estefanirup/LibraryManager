@@ -1,5 +1,6 @@
 using System;
 using LibraryManager.Model.Books;
+using LibraryManager.Model.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManager.Persistence;
@@ -7,6 +8,7 @@ namespace LibraryManager.Persistence;
 public class LibraryManagerContext : DbContext 
 {
     public DbSet<Book> Books { get; set; }
+    public DbSet<User> User { get; set; }
     public DbSet<Category> Categories { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

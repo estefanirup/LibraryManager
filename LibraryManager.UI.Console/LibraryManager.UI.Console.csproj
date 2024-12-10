@@ -14,4 +14,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryManager.Model\LibraryManager.Model.csproj" />
+    <ProjectReference Include="..\LibraryManager.Repositories\LibraryManager.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

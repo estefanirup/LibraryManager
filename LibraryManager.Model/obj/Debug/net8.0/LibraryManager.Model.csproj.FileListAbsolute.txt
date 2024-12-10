@@ -1,15 +1,3 @@
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.deps.json
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.dll
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.pdb
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.AssemblyInfoInputs.cache
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.AssemblyInfo.cs
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.csproj.CoreCompileInputs.cache
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.sourcelink.json
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.dll
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\refint\LibraryManager.Model.dll
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\LibraryManager.Model.pdb
-C:\Users\Estefani\Desktop\LibraryManager\LibraryManager.Model\obj\Debug\net8.0\ref\LibraryManager.Model.dll
 C:\Users\enzod\OneDrive\Documentos\.POO\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.deps.json
 C:\Users\enzod\OneDrive\Documentos\.POO\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.dll
 C:\Users\enzod\OneDrive\Documentos\.POO\LibraryManager\LibraryManager.Model\bin\Debug\net8.0\LibraryManager.Model.pdb
