@@ -12,7 +12,14 @@ namespace LibraryManager.Repositories
         
         public Repository()
         {
-            _dbSet = _dbContext.Set<T>();
+            try
+            {
+                _dbSet = _dbContext.Set<T>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro inesperado.", ex);
+            }
         }
         public void Create(T entity)
         {

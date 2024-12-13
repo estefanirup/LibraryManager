@@ -21,8 +21,8 @@ namespace LibraryManager.UI.Console.UI
         }
         public void Menu()
         {
-            string? op="Oi";
-            while (op != "0")
+            string op;
+            do
             {
                 System.Console.Clear();
                 System.Console.WriteLine("[0] Voltar");
@@ -37,56 +37,206 @@ namespace LibraryManager.UI.Console.UI
                 switch (op)
                 {
                     case "1":
-                        cadastrar();
+                        register();
+                        System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
+                        System.Console.ReadKey();
                         break;
                     case "2":
-                        exibir();
+                        display();
+                        System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
+                        System.Console.ReadKey();
                         break;
                     case "3":
-                        alterar();
+                        change();
+                        System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
+                        System.Console.ReadKey();
                         break;
                     case "4":
-                        excluir();
+                        delete();
+                        System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
+                        System.Console.ReadKey();
                         break;
                 }
+            } while (op != "0") ;
+        }
+
+        public void register()
+        {
+            System.Console.WriteLine("=== Cadastro de Usuário ===");
+
+            string _name;
+
+            do
+            {
+                System.Console.Write("Digite o nome do usuário: ");
+                _name = System.Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(_name))
+                {
+                    System.Console.WriteLine("O nome não pode estar vazio. Por favor, tente novamente.");
+                }
+            }while (string.IsNullOrWhiteSpace(_name));
+
+            string _email;
+            do
+            {
+                System.Console.Write("Digite o e-mail do usuário: ");
+                _email = System.Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(_email))
+                {
+                    System.Console.WriteLine("E-mail inválido. Por favor, insira um e-mail válido.");
+                }
+            } while (string.IsNullOrWhiteSpace(_email));
+            
+            User user = new User(
+                name: _name,
+                email: _email,
+                userType: "User",
+                registerDate: DateTime.Now
+            );
+
+            try
+            {
+                userRepository.Create(user);
+                System.Console.WriteLine("\nUsuário cadastrado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine($"Erro ao cadastrar usuário: {ex.Message}");
             }
         }
 
-        public void cadastrar()
+        public void display()
         {
-        System.Console.WriteLine("Cadastre");
-            User user = new User(
-            name: "João Silva",
-            email: "joao.silva@email.com",
-            userType: "Admin",
-            registerDate: DateTime.Now
-            );
-
-            userRepository.Create(user);
-            System.Console.WriteLine("se deus quis, adicionou");
-            System.Console.ReadKey();
-        }
-
-        public void exibir()
-        {
+            System.Console.WriteLine("=== Lista de Usuários ===");
             List<User> users = userRepository.GetAll();
             foreach (var item in users)
             {
                 System.Console.WriteLine(item);
             }
-            System.Console.WriteLine("\nAperte Qualquer Tecla Para Voltar!");
-            System.Console.ReadKey();
-
         }
 
-        public void alterar()
+        public void change()
         {
+            display();
 
+            System.Console.WriteLine("\n=== Altere um Usuário ===");
+
+            int id;
+            bool isValid;
+            do
+            {
+                System.Console.WriteLine("\nEscolha o ID para ser Alterado:");
+                string input = System.Console.ReadLine();
+                isValid = int.TryParse(input, out id);
+
+                if (!isValid)
+                {
+                    System.Console.WriteLine("Entrada inválida. Por favor, insira um número válido.");
+                }
+                else if (!itemExists(id))
+                {
+                    System.Console.WriteLine($"Nenhum item encontrado com o ID {id}. Por favor, tente novamente.");
+                    isValid = false;
+                }
+            } while (!isValid);
+
+            User user = userRepository.GetById(id);
+
+            string _name;
+
+            System.Console.Write("Voce deseja alterar o nome do usuário? ('S' para Sim): ");
+            string op = System.Console.ReadLine();
+            if (op == "S" || op == "s")
+            {
+                do
+                {
+                    System.Console.Write("Digite o novo nome do usuário: ");
+                    _name = System.Console.ReadLine();
+
+                    if (string.IsNullOrWhiteSpace(_name))
+                    {
+                        System.Console.WriteLine("O nome não pode estar vazio. Por favor, tente novamente.");
+                    }
+                    else
+                    {
+                        user.Name= _name;
+                    }
+                } while (string.IsNullOrWhiteSpace(_name));
+            }
+
+            System.Console.Write("Voce deseja alterar o email do usuário? ('S' para Sim): ");
+            op = System.Console.ReadLine();
+            if (op == "S" || op == "s")
+            {
+                string _email;
+                do
+                {
+                    System.Console.Write("Digite o novo e-mail do usuário: ");
+                    _email = System.Console.ReadLine();
+
+                    if (string.IsNullOrWhiteSpace(_email))
+                    {
+                        System.Console.WriteLine("E-mail inválido. Por favor, insira um e-mail válido.");
+                    }
+                    else
+                    {
+                        user.Email= _email;
+                    }
+                } while (string.IsNullOrWhiteSpace(_email));
+            }
+
+            try
+            {
+                userRepository.Update(user);
+                System.Console.WriteLine($"Item com ID {id} alterado com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine($"Erro ao deletar o item: {ex.Message}");
+            }
         }
 
-        public void excluir()
+        public void delete()
         {
+            display();
 
+            System.Console.WriteLine("\n=== Delete um Usuário ===");
+            int id;
+            bool isValid;
+            do 
+            { 
+                System.Console.WriteLine("\nEscolha o ID para ser deletado:");
+                string input = System.Console.ReadLine();
+                isValid = int.TryParse(input, out id);
+
+                if (!isValid)
+                {
+                    System.Console.WriteLine("Entrada inválida. Por favor, insira um número válido.");
+                }
+                else if (!itemExists(id))
+                {
+                    System.Console.WriteLine($"Nenhum item encontrado com o ID {id}. Por favor, tente novamente.");
+                    isValid = false;
+                }
+            } while (!isValid);
+
+            try
+            {
+                userRepository.Delete(id);
+                System.Console.WriteLine($"Item com ID {id} deletado com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine($"Erro ao deletar o item: {ex.Message}");
+            }
+        }
+
+        public bool itemExists(int id)
+        {
+            List<User> users = userRepository.GetAll();
+            return users.Any(item=> item.UserId==id);
         }
     }
 }
