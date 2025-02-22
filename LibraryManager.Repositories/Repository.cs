@@ -21,6 +21,7 @@ namespace LibraryManager.Repositories
                 throw new Exception("Ocorreu um erro inesperado.", ex);
             }
         }
+
         public void Create(T entity)
         {
             _dbSet.Add(entity);
