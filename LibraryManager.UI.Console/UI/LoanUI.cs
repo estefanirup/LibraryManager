@@ -21,6 +21,7 @@ internal class LoanUI
         loanRepository = new Repository<Loan>();
         userRepository = new Repository<User>();
         bookRepository = new Repository<Book>();
+        
     }
     public void Menu()
     {

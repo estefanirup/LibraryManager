@@ -1,46 +1,61 @@
-﻿using LibraryManager.Model.Books;
+﻿using System;
 using LibraryManager.UI.Console.UI;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
+        LoginUI loginUI = new LoginUI();
+        loginUI.Menu();
+
+        UserUI userUI = new UserUI();
+        BookUI bookUI = new BookUI();
+        AuthorUI authorUI = new AuthorUI();
+        CategoryUI categoryUI = new CategoryUI();
+        LoanUI loanUI = new LoanUI();
+
+        bool isAdmin = loginUI.LoggedUser.UserType == "Admin";
+
         while (true)
         {
             Console.Clear();
             Console.WriteLine("[0] Sair");
-            Console.WriteLine("[1] Gerenciar Usuario");
-            Console.WriteLine("[2] Gerenciar Livro");
-            Console.WriteLine("[3] Gerenciar Autor");
-            Console.WriteLine("[4] Gerenciar Categoria");
-            Console.WriteLine("[5] Gerenciar Emprestimo");
-            Console.Write("Escolha uma opcao: ");
-            string op = Console.ReadLine();
+            if (isAdmin) Console.WriteLine("[1] Gerenciar Usuário");
+            if (isAdmin) Console.WriteLine("[2] Gerenciar Livro");
+            if (isAdmin) Console.WriteLine("[3] Gerenciar Autor");
+            if (isAdmin) Console.WriteLine("[4] Gerenciar Categoria");
+            Console.WriteLine("[5] Gerenciar Empréstimo");
+            Console.Write("Escolha uma opção: ");
+
+            string op = Console.ReadLine()?.Trim() ?? "";
             Console.Clear();
             switch (op)
             {
                 case "0":
-                    System.Environment.Exit(1);
+                    Environment.Exit(0);
                     break;
                 case "1":
-                    UserUI userUI = new UserUI();
-                    userUI.Menu();
+                    if (isAdmin) userUI.Menu();
+                    else Console.WriteLine("Acesso negado! Apenas administradores podem gerenciar usuários.");
                     break;
                 case "2":
-                    BookUI bookUI = new BookUI();
-                    bookUI.Menu();
+                    if (isAdmin) bookUI.Menu();
+                    else Console.WriteLine("Acesso negado! Apenas administradores podem gerenciar Livros.");
                     break;
                 case "3":
-                    AuthorUI authorUI = new AuthorUI();
-                    authorUI.Menu();
+                    if (isAdmin) authorUI.Menu();
+                    else Console.WriteLine("Acesso negado! Apenas administradores podem gerenciar Autores.");
                     break;
                 case "4":
-                    CategoryUI categoryUI = new CategoryUI();
-                    categoryUI.Menu();
+                    if (isAdmin) categoryUI.Menu();
+                    else Console.WriteLine("Acesso negado! Apenas administradores podem gerenciar Categorias.");
                     break;
                 case "5":
-                    LoanUI loanUI = new LoanUI();
                     loanUI.Menu();
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida. Pressione qualquer tecla para continuar...");
+                    Console.ReadKey();
                     break;
             }
         }
